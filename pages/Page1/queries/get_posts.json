@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "get_employee",
+    "name": "get_posts",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "https://dummy.restapiexample.com"
+        "url": "https://jsonplaceholder.typicode.com"
       },
       "invalids": [],
       "messages": [],
@@ -20,7 +20,7 @@
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
-      "path": "/api/v1/employees",
+      "path": "/posts",
       "headers": [],
       "encodeParamsToggle": true,
       "queryParameters": [],
@@ -47,7 +47,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_get_employee",
+  "id": "Page1_get_posts",
   "deleted": false,
   "gitSyncId": "63d780337a2fd54716288a65_63d89dba7a2fd54716288a8e"
 }
