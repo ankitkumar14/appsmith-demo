@@ -6444,16 +6444,13 @@
                   "key": "primaryColumns.id.computedValue"
                 },
                 {
-                  "key": "primaryColumns.employee_name.computedValue"
+                  "key": "primaryColumns.userId.computedValue"
                 },
                 {
-                  "key": "primaryColumns.employee_salary.computedValue"
+                  "key": "primaryColumns.title.computedValue"
                 },
                 {
-                  "key": "primaryColumns.employee_age.computedValue"
-                },
-                {
-                  "key": "primaryColumns.profile_image.computedValue"
+                  "key": "primaryColumns.body.computedValue"
                 }
               ],
               "leftColumn": 31,
@@ -6497,10 +6494,9 @@
               "defaultPageSize": 0,
               "columnOrder": [
                 "id",
-                "employee_name",
-                "employee_salary",
-                "employee_age",
-                "profile_image"
+                "userId",
+                "title",
+                "body"
               ],
               "dynamicPropertyPathList": [],
               "displayName": "Table",
@@ -6544,16 +6540,16 @@
                   "validation": {},
                   "cellBackground": ""
                 },
-                "employee_name": {
+                "userId": {
                   "allowCellWrapping": false,
-                  "index": 1,
+                  "index": 0,
                   "width": 150,
-                  "originalId": "employee_name",
-                  "id": "employee_name",
-                  "alias": "employee_name",
+                  "originalId": "userId",
+                  "id": "userId",
+                  "alias": "userId",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
-                  "columnType": "text",
+                  "columnType": "number",
                   "textColor": "",
                   "textSize": "0.875rem",
                   "fontStyle": "",
@@ -6565,76 +6561,20 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "employee_name",
+                  "label": "userId",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"employee_name\"]))}}",
+                  "computedValue": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"userId\"]))}}",
                   "validation": {},
                   "cellBackground": ""
                 },
-                "employee_salary": {
+                "title": {
                   "allowCellWrapping": false,
                   "index": 2,
                   "width": 150,
-                  "originalId": "employee_salary",
-                  "id": "employee_salary",
-                  "alias": "employee_salary",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "number",
-                  "textColor": "",
-                  "textSize": "0.875rem",
-                  "fontStyle": "",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "employee_salary",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"employee_salary\"]))}}",
-                  "validation": {},
-                  "cellBackground": ""
-                },
-                "employee_age": {
-                  "allowCellWrapping": false,
-                  "index": 3,
-                  "width": 150,
-                  "originalId": "employee_age",
-                  "id": "employee_age",
-                  "alias": "employee_age",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "number",
-                  "textColor": "",
-                  "textSize": "0.875rem",
-                  "fontStyle": "",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "employee_age",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"employee_age\"]))}}",
-                  "validation": {},
-                  "cellBackground": ""
-                },
-                "profile_image": {
-                  "allowCellWrapping": false,
-                  "index": 4,
-                  "width": 150,
-                  "originalId": "profile_image",
-                  "id": "profile_image",
-                  "alias": "profile_image",
+                  "originalId": "title",
+                  "id": "title",
+                  "alias": "title",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
@@ -6649,10 +6589,38 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "profile_image",
+                  "label": "title",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"profile_image\"]))}}",
+                  "computedValue": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"title\"]))}}",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "body": {
+                  "allowCellWrapping": false,
+                  "index": 3,
+                  "width": 150,
+                  "originalId": "body",
+                  "id": "body",
+                  "alias": "body",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "body",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"body\"]))}}",
                   "validation": {},
                   "cellBackground": ""
                 }
@@ -6662,7 +6630,7 @@
               "rightColumn": 64,
               "textSize": "0.875rem",
               "widgetId": "059z2moe4v",
-              "tableData": "{{get_employee.data.data}}",
+              "tableData": "{{get_posts.data}}",
               "label": "Data",
               "searchKey": "",
               "parentId": "0",
@@ -6685,20 +6653,18 @@
               "timeoutInMillisecond": 10000
             },
             {
+              "id": "Page1_get_posts",
+              "name": "get_posts",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
               "id": "Page1_get_tickets",
               "name": "get_tickets",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Page1_get_employee",
-              "name": "get_employee",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             }
